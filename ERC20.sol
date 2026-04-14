@@ -673,3 +673,4 @@ contract TONCONTRAT is ERC20 {
         return balanceOf(account); // Call balanceOf to get the balance
     }
 }
+ new update v1.0
