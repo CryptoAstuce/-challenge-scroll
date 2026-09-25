@@ -1,0 +1,21 @@
+{
+  "name": "challenge-scroll",
+  "version": "1.0.0",
+  "description": "0x Challenge on Scroll: WETH to wstETH swap via the 0x Swap API and Permit2.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "qs": "^6.13.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "@types/qs": "^6.9.16",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
