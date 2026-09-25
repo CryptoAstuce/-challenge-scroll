@@ -80,19 +80,19 @@ function displayLiquiditySources(route: any) {
  
 // Function to display the buy/sell taxes for tokens
 function displayTokenTaxes(tokenMetadata: any) {
-  const buyTokenBuyTax = (parseInt(tokenMetadata.buyToken.buyTaxBps) / 100).toFixed(2);
-  const buyTokenSellTax = (parseInt(tokenMetadata.buyToken.sellTaxBps) / 100).toFixed(2);
-  const sellTokenBuyTax = (parseInt(tokenMetadata.sellToken.buyTaxBps) / 100).toFixed(2);
-  const sellTokenSellTax = (parseInt(tokenMetadata.sellToken.sellTaxBps) / 100).toFixed(2);
+  const buyTokenBuyTax = parseInt(tokenMetadata.buyToken.buyTaxBps) / 100;
+  const buyTokenSellTax = parseInt(tokenMetadata.buyToken.sellTaxBps) / 100;
+  const sellTokenBuyTax = parseInt(tokenMetadata.sellToken.buyTaxBps) / 100;
+  const sellTokenSellTax = parseInt(tokenMetadata.sellToken.sellTaxBps) / 100;
  
   if (buyTokenBuyTax > 0 || buyTokenSellTax > 0) {
-    console.log(`Buy Token Buy Tax: ${buyTokenBuyTax}%`);
-    console.log(`Buy Token Sell Tax: ${buyTokenSellTax}%`);
+    console.log(`Buy Token Buy Tax: ${buyTokenBuyTax.toFixed(2)}%`);
+    console.log(`Buy Token Sell Tax: ${buyTokenSellTax.toFixed(2)}%`);
   }
  
   if (sellTokenBuyTax > 0 || sellTokenSellTax > 0) {
-    console.log(`Sell Token Buy Tax: ${sellTokenBuyTax}%`);
-    console.log(`Sell Token Sell Tax: ${sellTokenSellTax}%`);
+    console.log(`Sell Token Buy Tax: ${sellTokenBuyTax.toFixed(2)}%`);
+    console.log(`Sell Token Sell Tax: ${sellTokenSellTax.toFixed(2)}%`);
   }
 }
  
